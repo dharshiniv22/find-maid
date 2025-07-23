@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/signupimg"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:background="@drawable/circle_bg" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SIGN UP"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Name Field -->
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/lightblue"
+            android:drawableStart="@drawable/vector__1_"
+            android:drawablePadding="20dp"
+            android:hint="Name"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lightblue"
+            android:drawableStart="@drawable/vector__1_"
+            android:drawablePadding="20dp"
+            android:hint="Username"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lightblue"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="20dp"
+            android:hint="Email"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Contact Number Field -->
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lightblue"
+            android:drawableStart="@drawable/contact"
+            android:drawablePadding="20dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lightblue"
+            android:drawableStart="@drawable/password"
+            android:drawableEnd="@drawable/eyee"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#3273BF"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

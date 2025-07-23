@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How was your experience?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to rate"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <!-- Stars layout -->
+        <LinearLayout
+            android:id="@+id/star_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ratestar"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ratestar"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ratestar"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ratestar"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ratestar"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Tell us more (optional)"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btn_submit_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Rating"
+            android:backgroundTint="#5D2A2A"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

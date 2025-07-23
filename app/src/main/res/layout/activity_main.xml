@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="265dp"
+        android:layout_height="226dp"
+        android:src="@drawable/imageview"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="198dp" />
+(*
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Find a Maid"
+        android:textColor="#5F99D9"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="455dp" />
+</LinearLayout>

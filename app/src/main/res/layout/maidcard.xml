@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:contentDescription="Maid card with details and options">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#F5F5F5"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/maid_image"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Photo of maid"
+                android:src="@drawable/samplemaid" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/maid_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sofiya A"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/maid_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age : 30 years"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/maid_qualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qualification : 3 years"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btn_more_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="See more details"
+                    android:backgroundTint="#773232"
+                    android:textColor="@android:color/white"
+                    android:contentDescription="Tap for more details" />
+
+                <Button
+                    android:id="@+id/btn_view_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View All Reviews"
+                    android:backgroundTint="#34629D"
+                    android:textColor="@android:color/white"
+                    android:contentDescription="Tap to view reviews" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
