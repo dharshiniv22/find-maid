@@ -18,4 +18,12 @@
         <item>12 Hours</item>
         <item>24 Hours</item>
     </string-array>
+
+
+    <string name="FindAMaid">FindAMaid</string>
+    <string name="maid_image_desc">Maid Image</string>
+    <!-- other existing strings -->
 </resources>
+
+
+

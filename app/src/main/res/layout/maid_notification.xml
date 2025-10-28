@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <!-- Maid Photo -->
+    <ImageView
+        android:id="@+id/imgMaidPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:background="@drawable/square_border" />
+
+    <!-- Maid Name -->
+    <TextView
+        android:id="@+id/tvMaidName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maid Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <!-- Category -->
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <!-- Requested At -->
+    <TextView
+        android:id="@+id/tvRequestedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requested At"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:backgroundTint="@android:color/holo_red_light" />
+    </LinearLayout>
+
+</LinearLayout>

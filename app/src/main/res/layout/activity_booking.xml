@@ -32,11 +32,51 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+            <!-- Name -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:text="Address :"
+                android:text="Name:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Enter your name"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Phone Number:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Address:"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -50,11 +90,12 @@
                 android:padding="12dp"
                 android:textSize="16sp" />
 
+            <!-- Pincode -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:text="Pin Code :"
+                android:text="Pin Code:"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -62,49 +103,71 @@
                 android:id="@+id/pincodeEditText"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="16dp"
                 android:background="@android:drawable/editbox_background"
                 android:hint="Enter your Pincode"
                 android:inputType="number"
                 android:padding="12dp"
                 android:textSize="16sp" />
 
+            <!-- Preferred Date/Time -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Share your location:"
+                android:layout_marginBottom="4dp"
+                android:text="Preferred Time:"
                 android:textColor="#000000"
                 android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/dateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Select date and time"
+                android:focusable="false"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Additional Notes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Additional Instructions (Optional):"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/notesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="top"
+                android:hint="Enter any special instructions"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#6E1E1E"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/shareLocationButton"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginBottom="24dp"
-                android:backgroundTint="#1E88E5"
-                android:text="Open Google Maps"
-                android:textColor="#FFFFFF" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/submitButton"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="#6E1E1E"
-                    android:text="Submit"
-                    android:textColor="#FFFFFF" />
+                android:text="Open Google Maps" />
 
 
-            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

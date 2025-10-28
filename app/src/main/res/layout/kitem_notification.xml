@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvMaidPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maid Post #1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kDhars"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: Cleaning"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12, Gandhi Street, T Nagar, Chennai"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvPincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="600017"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvPreferredTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred Time: 2025-10-12 18:30"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please call on arrival"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: pending"
+            android:textSize="14sp"
+            android:textColor="#FF5722"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

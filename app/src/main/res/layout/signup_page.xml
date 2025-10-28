@@ -12,15 +12,17 @@
         android:gravity="center_horizontal"
         android:padding="20dp">
 
+
         <ImageView
             android:id="@+id/imageViewProfile"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/signupimg"
-            android:scaleType="centerCrop"
             android:padding="10dp"
-            android:background="@drawable/circle_bg" />
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:src="@drawable/signupimg" />
+
 
         <TextView
             android:id="@+id/textView2"
@@ -97,7 +99,6 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/lightblue"
             android:drawableStart="@drawable/password"
-            android:drawableEnd="@drawable/eyee"
             android:drawablePadding="20dp"
             android:hint="Password"
             android:inputType="textPassword"

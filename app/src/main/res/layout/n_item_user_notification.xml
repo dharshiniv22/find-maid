@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_marginBottom="15dp"
+    android:background="#FFF"
+    android:elevation="2dp">
+
+    <!-- Maid Image -->
+    <ImageView
+        android:id="@+id/iv_maid_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="10dp"
+        android:background="#EAEAEA"
+        android:contentDescription="@string/maid_image_desc" />
+
+    <!-- Info section -->
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="118dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_maid_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maid Name: "
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: "
+            android:textColor="#444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_request_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requested Date: "
+            android:textColor="#444"
+            android:textSize="15sp" />
+
+        <!-- Highlighted Status -->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFF3E0"
+            android:padding="4dp"
+            android:text="Status: "
+            android:textColor="#FF5722"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

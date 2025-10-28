@@ -1,71 +1,106 @@
-<!-- res/layout/item_maid_notification.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10dp">
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp">
 
-    <TextView
-        android:id="@+id/tvMaidName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Maid Name"
-        android:textStyle="bold"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/tvCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Category" />
-
-    <TextView
-        android:id="@+id/tvAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address" />
-
-    <TextView
-        android:id="@+id/tvStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Status" />
-
-    <TextView
-        android:id="@+id/tvRequestedAt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Requested At" />
-
-    <ImageView
-        android:id="@+id/imgMaidPhoto"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:src="@mipmap/ic_launcher"
-        android:scaleType="centerCrop" />
-
-    <!-- Buttons Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:gravity="end">
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF">
 
-        <Button
-            android:id="@+id/btnAccept"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgMaidPhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/samplemaid"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/image_border"
+                android:contentDescription="Maid Image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMaidName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maid Name"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="16sp"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address, Pincode"
+                    android:textSize="14sp"
+                    android:textColor="#777777" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Accept"
-            android:layout_marginEnd="8dp"
-            android:backgroundTint="@android:color/holo_green_light" />
+            android:text="Status: pending"
+            android:textStyle="bold"
+            android:textColor="#FF8800"
+            android:layout_marginTop="8dp" />
 
-        <Button
-            android:id="@+id/btnReject"
+        <TextView
+            android:id="@+id/tvRequestedAt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reject"
-            android:backgroundTint="@android:color/holo_red_light" />
+            android:text="Requested At: 2025-07-25"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.cardview.widget.CardView>

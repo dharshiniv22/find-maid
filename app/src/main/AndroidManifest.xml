@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.saveetha.findmaid">
+    package="com.saveetha.findamaid">
 
     <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,9 +16,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Findmaid"
         android:usesCleartextTraffic="true"
@@ -27,11 +27,11 @@
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
 
         <!-- Launch activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.saveetha.findamaid.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,19 +39,26 @@
             </intent-filter>
         </activity>
 
-        <!-- All other activities -->
-        <activity android:name=".LoginPage" android:exported="true" />
-        <activity android:name=".NavigationActivity" android:exported="true" />
-        <activity android:name=".Signup" android:exported="true" />
-        <activity android:name=".CategoryMaidListActivity" android:exported="true" />
-        <activity android:name=".MaidDetailActivity" android:exported="true" />
-        <activity android:name=".SearchBar" android:exported="true" />
-        <activity android:name=".ReviewActivity" android:exported="true" />
-        <activity android:name=".RateUsActivity" android:exported="false" />
-        <activity android:name=".BookingActivity" android:exported="true" />
-        <activity android:name=".PostRequest" android:exported="false" />
-        <activity android:name=".MaidRequestsActivity" android:exported="true" />
-        <activity android:name=".UserRequestStatusActivity" android:exported="true" />
+        <!-- Other activities -->
+        <activity android:name="com.saveetha.findamaid.LoginPage" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.NavigationActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.Signup" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.CategoryMaidListActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.MaidDetailActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.SearchBar" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.ReviewActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.RateUsActivity" android:exported="false" />
+        <activity android:name="com.saveetha.findamaid.BookingActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.PostRequest" android:exported="false" />
+        <activity android:name="com.saveetha.findamaid.UserRequestStatusActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.NotifActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.MaidNotifyActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.NewFetchNotificationsActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.NewBookingActivity" android:exported="true" />
+
+        <!-- Added kNotificationsActivity -->
+        <activity android:name="com.saveetha.findamaid.kNotificationsActivity" android:exported="true" />
+        <activity android:name="com.saveetha.findamaid.N_Activity_User_Notification" android:exported="true" />
 
     </application>
 </manifest>
